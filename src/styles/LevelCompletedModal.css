@@ -1,0 +1,46 @@
+/* LevelCompletedModal.css */
+
+.modal-overlay-levelcompleted {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-levelcompleted {
+    background-image: url(https://wallpaperaccess.com/full/2413220.jpg);
+    padding: 5vw; /* Ajuste responsive */
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-levelcompleted p {
+    font-size: 5vw; /* Ajuste responsive */
+    font-family: 'HarryP', arial, sans-serif;
+    color: var(--color-deep-red);
+    margin-bottom: 2vw; /* Ajuste responsive */
+    margin-top: 2vw; /* Ajuste responsive */
+}
+
+.modal-levelcompleted button {
+    margin-top: 2vw; /* Ajuste responsive */
+    padding: 2vw 5vw; /* Ajuste responsive */
+}
+
+/*EFECTO DOTS*/
+.loading-dots {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0%;
+    }
+}

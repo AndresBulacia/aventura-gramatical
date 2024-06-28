@@ -1,0 +1,134 @@
+/*VENTANA MODAL*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-image: url(https://wallpaperaccess.com/full/2413220.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'HarryP', arial, sans-serif;
+    color: var(--color-deep-red);
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.modal button {
+    margin-top: 20px;
+    font-size: 1.5vw;
+    padding: 10px 20px;
+}
+
+.modal label {
+    display: block;
+    margin-top: 20px;
+    font-size: 4vw;
+}
+
+/*TABLA RANKING*/
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-dark-red);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--color-deep-red);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: var(--color-dark-red);
+    color: var(--color-golden-yellow);
+}
+
+thead th {
+    padding: 10px;
+    font-size: 1vw;
+}
+
+tbody td {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+    color: #000000;
+}
+
+.close-modal {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-dark-red);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
+    background-color: var(--color-deep-red);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .modal h2, .modal button, .modal label,
+    .filter-buttons button, thead th, tbody td, button {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal h2, .modal button, .modal label,
+    .filter-buttons button, thead th, tbody td, button {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal button, .modal label,
+    .filter-buttons button, thead th, tbody td, button {
+        font-size: 3vw;
+    }
+    .modal h2{
+        font-size: 12vw;
+    }
+}

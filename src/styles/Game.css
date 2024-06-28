@@ -1,0 +1,417 @@
+/*IMPORTACION DE FUENTES*/
+@font-face {
+    font-family: 'HarryP';
+    src: url('../assets/fonts/HarryP.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Wizard';
+    src: url('../assets/fonts/Wizard.ttf') format('truetype');
+}
+
+:root {
+    --color-golden-yellow: #DAA520;
+    --color-white: #FFFFFF;
+    --color-dark-red: #8B0000;
+    --color-black: #000000;
+    --color-deep-red: #5F1010;
+    --color-navy-blue: #000080;
+    --color-emerald-green: #50C878;
+}
+
+/*GLOBALES*/
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: var(--color-white);
+}
+
+/*VIDEO DE FONDO*/
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*SOMBRA DE VIDEO*/
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* CSS */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.typewriter-text {
+    font-size: 2.5vw;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.player-name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+.player-name-input input {
+    padding: 10px;
+    font-size: 1.2vw;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.player-name-input label {
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    font-size: 1.5vw;
+}
+
+.start-button {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-red);
+    font-family: 'HarryP', sans-serif;
+    font-size: 2vw;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: var(--color-emerald-green);
+    color: var(--color-white);
+}
+
+.team-select-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'HarryP', sans-serif;
+}
+
+.team-select-buttons button {
+    font-family: 'Wizard', sans-serif;
+    margin: 5px;
+    padding: 20px;
+    font-size: 2vw;
+    background-color: var(--color-dark-red);
+    color: var(--color-golden-yellow);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    transition: transform 0.3s ease;
+}
+
+.team-select-buttons-h2{
+    font-weight: 400;
+}
+
+.team-select-buttons button:hover {
+    background-color: var(--color-deep-red);
+    transform: translateY(-5px);
+    color: var(--color-white); 
+}
+
+.welcome-player {
+    font-family: 'Wizard', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+}
+.score-player {
+    font-family: 'Wizard', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+}
+
+.game-info h1, .game-info h2 {
+    font-family: 'Wizard', sans-serif;
+    margin-bottom: 10px;
+}
+
+.sentence {
+    margin-top: 20px;
+    font-size: 2vw;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 2vw;
+    background-color: var(--color-navy-blue);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: var(--color-dark-red);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-in-video {
+    animation: fadeIn 2s ease-in-out;
+    opacity: 1;
+}
+
+.zoom-in-title {
+    animation: zoomIn 3s ease-in-out;
+    opacity: 1;
+    font-family: 'Wizard', sans-serif;
+    font-weight: 400;
+}
+
+.escenas {
+    width: 100%;
+    position: absolute;
+}
+.start-button-escenas {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-red);
+    font-family: 'HarryP', sans-serif;
+    font-size: 2vw;
+    padding: 10px 20px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top: 90%; /* Ajusta la posición según sea necesario */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.start-button-escenas:hover {
+    background-color: var(--color-emerald-green);
+    color: var(--color-white);
+}
+
+.gameplay-container {
+    font-family:'Courier New', Courier, monospace;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.words-container, .selected-words {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-info {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2vw;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+    margin: 10px;
+}
+
+.button-game {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-black);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.button-game:hover {
+    background-color: var(--color-emerald-green);
+    color: var(--color-white);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .typewriter-text, .player-name-input label, .player-name-input input, .start-button,
+    .team-select-buttons button, .welcome-player, .sentence, .options button, .task-info, 
+    .button-game, .start-button-escenas {
+        font-size: 2vw;
+    }
+}
+@media (orientation: landscape) {
+    .typewriter-text, .player-name-input label, .player-name-input input, .start-button,
+    .team-select-buttons button, .welcome-player, .sentence, .options button, .task-info, 
+    .button-game, .start-button-escenas {
+        font-size: 2vw;
+    }
+    .sentence, .score-player, .task-info, .start-button-escenas, .selected-words p {
+        font-size: 1.6vw;
+        margin: 0;
+    }
+    .button-game{
+        margin: 0.5vw;
+    }
+    .player-name-input {
+        width: 80%;
+        margin-left: 0;
+    }
+    .team-select-buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .button-game{
+        font-size: 1.5vw;
+    }
+    .team-select-buttons button {
+        margin: 10px;
+        padding: 30px;
+        font-size: 2vw;
+        background-color: var(--color-dark-red);
+        color: var(--color-golden-yellow);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .typewriter-text, .player-name-input label, .player-name-input input, .start-button,
+    .team-select-buttons button, .welcome-player, .sentence, .options button, .task-info, 
+    .button-game, .start-button-escenas {
+        font-size: 4vw;
+    }
+    .sentence, .score-player, .task-info, .start-button-escenas {
+        font-size: 1.6vw;
+        margin: 0;
+    }
+    .button-game{
+        margin: 1.3vw;
+    }
+    .player-name-input {
+        width: 80%;
+        margin-left: 0;
+    }
+    .score-player{
+        font-size: 7vw;
+    }
+    .team-select-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-select-buttons button {
+        margin: 20px;
+        padding: 20px;
+        font-size: 2vw;
+        background-color: var(--color-dark-red);
+        color: var(--color-golden-yellow);
+        border: none;
+        border-radius: 5px;
+        width: 70%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media (max-width: 480px) {
+    .typewriter-text, .player-name-input label, .player-name-input input, .start-button,
+    .team-select-buttons button, .welcome-player, .sentence, .options button, .task-info, 
+    .button-game, .score-player, .start-button-escenas {
+        font-size: 5vw;
+    }
+    .welcome-player{
+        
+    }
+
+    .player-name-input {
+        width: 90%; /* Ajuste para ocupar menos ancho */
+        margin: 0;
+        margin-top: -10px;
+    }
+    .start-button{
+        margin-top: -2px;
+    }
+    .button-game{
+        font-size: 3.5vw;
+    }
+    .selected-words{
+        font-size: 3vw;
+    }
+    .score-player{
+        font-size: 6vw;
+    }
+
+    .team-select-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
