@@ -1,0 +1,631 @@
+{
+    "levels": [
+      {
+        "level": 1,
+        "intro":"Harry debe recolectar ingredientes para lograr obtener una poción mágica que lo ayudará a avanzar. Para ello, debe identificar correctamente el sujeto y el predicado en oraciones que se le presentan, pero ¿qué tenemos que identificar primero?",
+        "sublevels": [
+          {
+            "sublevel": 1,
+            "description": "El bosque prohibido está lleno de magia y sorpresas. Harry debe descubrir los secretos que guarda, para ello, debemos ayudarlo reconociendo el núcleo verbal que nos permitirá identificar el sujeto y el predicado en las oraciones dadas, que servirán de guía para la poción mágica. ¿lo ayudamos?",
+            "tasks": [
+              {
+                "sentence": "Los secretos de Harry permitirán cumplir su sueño.",
+                "question": "¿Cuál es el núcleo verbal?",
+                "options": {
+                    "nv": ["Los","Harry","permitirán","de","secretos","cumplir","su","sueño"]
+                  },
+                "answer": {
+                    "nv": "permitirán"
+                  }
+              },
+              {
+                "sentence": "La magia es poderosa y muy mágica.",
+                "question": "¿Cuál es el núcleo verbal?",
+                "options": {
+                    "nv": ["magia","poderosa","es","y","La","mágica","muy"]
+                  },
+                "answer": {
+                    "nv": "es"
+                  }
+              },
+              {
+                "sentence": "Harry no fue un chico común y corriente.",
+                "question": "¿Cuál es el núcleo verbal?",
+                "options": {
+                    "nv": ["no","Harry","un","fue","corriente","y","común","chico"]
+                  },
+                "answer": {
+                    "nv": "fue"
+                  }
+              },
+              {
+                "sentence": "Los Dursley tenían un hijo pequeño llamado Dudley.",
+                "question": "¿Cuál es el núcleo verbal?",
+                "options": {
+                    "nv": ["Dursley","tenían","hijo","Los","un","llamado","pequeño","Dudley"]
+                  },
+                "answer": {
+                    "nv": "tenían"
+                  }
+              },
+              {
+                "sentence": "Albus Dumbledore no parecía darse cuenta de la magia de Harry.",
+                "question": "¿Cuál es el núcleo verbal?",
+                "options": {
+                    "nv": ["parecía","Albus","Dumbledore","cuenta","de","la","no","darse","Harry","magia"]
+                  },
+                "answer": {
+                    "nv": "parecía"
+                  }
+              }
+            ]
+          },
+          {
+            "sublevel": 2,
+            "description": "Identificar el predicado ayudará a Harry a completar los elementos de la poción mágica.",
+            "tasks": [
+              {
+                "sentence": "Encontro en una bella planta un elemento dudoso.",
+                "question": "¿Cuál es el predicado?",
+                "options": {
+                  "predicate": ["en","bella","elemento","todas son correctas","Encontro","una","planta","dudoso","un"]
+                },
+                "answer": {
+                  "predicate": "todas son correctas"
+                }
+              },
+              {
+                "sentence": "En el bosque Harry busca elementos mágicos.",
+                "question": "¿Cuál es el predicado?",
+                "options": {
+                  "predicate": ["En el bosque","Harry","busca", "elementos", "mágicos"]
+                },
+                "answer": {
+                  "predicate": "En el bosque"
+                }
+              },
+              {
+                "sentence": "Mi querida profesora vio un gato y le sonrió.",
+                "question": "¿Cuál es el predicado?",
+                "options": {
+                  "predicate": ["Mi querida profesora", "vio un gato y le sonrió"]
+                },
+                "answer": {
+                  "predicate": "vio un gato y le sonrió"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 3,
+            "description": "Durante el recorrido por el bosque, Harry descubre plantas aromáticas muy bellas, pero intuye que pueden ser peligrosas. Vamos a ayudarlo, reconociendo el núcleo del sujeto, si es un sujeto simple o compuesto, lo que nos permitirá avanzar de nivel y ayudar a Harry en su elección. ¿Comenzamos? ",
+            "tasks": [
+              {
+                "sentence": "Hermione y Harry estudian juntos en la biblioteca.",
+                "question": "¿Cuál es el núcleo del sujeto?",
+                "options": {
+                  "nucleus": ["Hermione","juntos","en","biblioteca","y","Harry","la","estudian","Hermione y Harry"]
+                },
+                "answer": {
+                  "nucleus": "Hermione y Harry"
+                }
+              },
+              {
+                "sentence": "Hermione y Harry estudian juntos en la biblioteca.",
+                "question": "¿Cuál es tipo de sujeto?",
+                "options": {
+                  "type": ["Sujeto simple", "Sujeto compuesto"]
+                },
+                "answer": {
+                  "type": "Sujeto compuesto"
+                }
+              },
+              {
+                "sentence": "Harry descubre plantas aromáticas.",
+                "question": "¿Cuál es el núcleo del sujeto?",
+                "options": {
+                  "nucleus": ["descubre","Harry","aromáticas","plantas"]
+                },
+                "answer": {
+                  "nucleus": "Harry"
+                }
+              },
+              {
+                "sentence": "Harry descubre plantas aromáticas.",
+                "question": "¿Cuál es tipo de sujeto?",
+                "options": {
+                  "type": ["Sujeto simple", "Sujeto compuesto"]
+                },
+                "answer": {
+                  "type": "Sujeto simple"
+                }
+              },
+              {
+                "sentence": "Las lechuzas, estrellas fugaces y la escoba mágica tenían magia a su alrededor.",
+                "question": "¿Cuál es el núcleo del sujeto?",
+                "options": {
+                  "nucleus": ["Las lechuzas, estrellas fugaces y la escoba mágica","tenían magia a su alrededor."]
+                },
+                "answer": {
+                  "nucleus": "Las lechuzas, estrellas fugaces y la escoba mágica"
+                }
+              },
+              {
+                "sentence": "Las lechuzas, estrellas fugaces y la escoba mágica tenían magia a su alrededor.",
+                "question": "¿Cuál es tipo de sujeto?",
+                "options": {
+                  "type": ["Sujeto simple", "Sujeto compuesto"]
+                },
+                "answer": {
+                  "type": "Sujeto compuesto"
+                }
+              },
+              {
+                "sentence": "Un caramelo de limones un dulce de los Muggles.",
+                "question": "¿Cuál es el núcleo del sujeto?",
+                "options": {
+                  "nucleus": ["Un caramelo de limones", "un dulce de los Muggles"]
+                },
+                "answer": {
+                  "nucleus": "Un caramelo de limones"
+                }
+              },
+              {
+                "sentence": "Un caramelo de limones un dulce de los Muggles.",
+                "question": "¿Cuál es tipo de sujeto?",
+                "options": {
+                  "type": ["Sujeto simple", "Sujeto compuesto"]
+                },
+                "answer": {
+                  "type": "Sujeto simple"
+                }
+              },
+              {
+                "sentence": "Dumbledore inclinó la cabeza.",
+                "question": "¿Cuál es el núcleo del sujeto?",
+                "options": {
+                  "nucleus": ["Dumbledore","inclinó","la","cabeza"]
+                },
+                "answer": {
+                  "nucleus": "Dumbledore"
+                }
+              },
+              {
+                "sentence": "Dumbledore inclinó la cabeza.",
+                "question": "¿Cuál es tipo de sujeto?",
+                "options": {
+                  "type": ["Sujeto simple", "Sujeto compuesto"]
+                },
+                "answer": {
+                  "type": "Sujeto simple"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 4,
+            "description": "Harry se despertó temprano aquella mañana, aunque sabía que todo había sido un sueño, quedo abrumado. ayudemos a Harry a buscar la manera de derrotar a Voldemort, su enemigo mas temeroso, para ello, si logramos reconocer correctamente los modificadores del sujeto, lograremos superar este nivel lleno de oscuridad.",
+            "tasks": [
+              {
+                "sentence": "La calle de Privet Drive permanecía silenciosa.",
+                "question": "Identifica el modificador directo.",
+                "options":{
+                  "MD": ["calle", "La", "Privet Drive", "de", "silenciosa", "permanecía"]
+                },
+                "answer": {
+                  "MD": "La"
+                }
+              },
+              {
+                "sentence": "El valiente Harry derrotó a Voldemort.",
+                "question": "Identifica el modificador directo.",
+                "options":{
+                  "MD": ["Harry", "derrotó", "A Voldemort", "El valiente"]
+                },
+                "answer": {
+                  "MD": "El valiente"
+                }
+              },
+              {
+                "sentence": "Una brisa como suave agitó los pulcros setos.",
+                "question": "Identifica el modificador directo.",
+                "options":{
+                  "MD": ["setos", "suave", "Una", "agitó", "brisa", "los", "como", "pulcros"]
+                },
+                "answer": {
+                  "MD": "Una"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 5,
+            "description": "Aparece Hermione, fiel amiga de Harry, quien lo quiere ayudar a crear la pócima correcta para derrotar a Voldemort, para eso, debemos completar con el OD en las siguientes oraciones ¿me ayudas?",
+            "tasks": [
+              {
+                "sentence": "Hermione dio ...... a Harry.",
+                "question": "Identifica el objeto directo.",
+                "options": {
+                  "OD": ["un libro", "esa noche"]
+                },
+                "answer": {
+                  "OD": "un libro"
+                }
+              },
+              {
+                "sentence": "La pócima correcta estudia ...... de Harry.",
+                "question": "Identifica el objeto directo.",
+                "options": {
+                  "OD": ["el domingo", "la varita mágica"]
+                },
+                "answer": {
+                  "OD": "la varita mágica"
+                }
+              },
+              {
+                "sentence": "Harry oyó ...... en dirección a la cocina.",
+                "question": "Identifica el objeto directo.",
+                "options": {
+                  "OD": ["sus pasos", "tranquilo"]
+                },
+                "answer": {
+                  "OD": "sus pasos"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 6,
+            "description": "Hermione y Harry, no logran armar la pócima correcta, le faltan elementos importantes, para descubrirlos, deben identificar el OI, que los llevara a encontrar el camino hacia los elementos que faltan. ¿probamos?",
+            "tasks": [
+              {
+                "sentence": "Hermione le preparo una tortilla a sus amigos.",
+                "question": "Identifica el objeto indirecto.",
+                "options": {
+                  "OI": ["le preparó", "a sus amigos", "Hermione", "una tortilla"]
+                },
+                "answer": {
+                  "OI": "a sus amigos"
+                }
+              },
+              {
+                "sentence": "Entregue la pócima a la profesora.",
+                "question": "Identifica el objeto indirecto.",
+                "options": {
+                  "OI": ["a la profesora", "Entregue la pócima"]
+                },
+                "answer": {
+                  "OI": "a la profesora"
+                }
+              },
+              {
+                "sentence": "Dio un sermon para los alumnos el domingo.",
+                "question": "Identifica el objeto indirecto.",
+                "options": {
+                  "OI": ["Dio un sermon", "el domingo", "para los alumnos"]
+                },
+                "answer": {
+                  "OI": "para los alumnos"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 7,
+            "description": "Harry encuentra la piedra filosofal en la cueva, pero no encuentra la salida, para ello, debe identificar correctamente los circunstanciales que lo ayudaran a encontrar la salida, ¿cómo, ¿dónde, cuanto, para qué, por qué? Son algunas preguntas que se hace Harry, ¿lo ayudamos a encontrar la respuesta correcta en las palabras marcadas?",
+            "tasks": [
+              {
+                "sentence": "Harry encontró la piedra filosofal en la cueva.",
+                "question": "Identifica el circunstancial.",
+                "options": {
+                  "circ": ["de tiempo", "de cantidad", "de lugar"]
+                },
+                "answer": {
+                  "circ": "de lugar"
+                }
+              },
+              {
+                "sentence": "Iremos al bosque tranquilamente.",
+                "question": "Identifica el circunstancial.",
+                "options": {
+                  "circ": ["de tiempo", "de cantidad", "de modo"]
+                },
+                "answer": {
+                  "circ": "de modo"
+                }
+              },
+              {
+                "sentence": "Todos escucharon ruido en la escuela por una huelga.",
+                "question": "Identifica el circunstancial.",
+                "options": {
+                  "circ": ["de causa", "de negación", "de finalidad"]
+                },
+                "answer": {
+                  "circ": "de causa"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 8,
+            "description": "Hermione está buscando la forma de llegar a Harry, ya que no logra encontrarlo y lo necesita para ver detalles sobre su examen. Para encontrarlo, debe reconocer el complemento de régimen en diferentes oraciones, ¿la ayudamos?",
+            "tasks": [
+              {
+                "sentence": "Hermione insiste en buscar a Harry.",
+                "question": "¿Cuál es el complemento de régimen?",
+                "options": {
+                  "CR": ["en buscar a Harry", "Hermione insiste"]
+                },
+                "answer": {
+                  "CR": "en buscar a Harry"
+                }
+              },
+              {
+                "sentence": "Hermione está preocupada por los exámenes del viernes.",
+                "question": "¿Cuál es el complemento de régimen?",
+                "options": {
+                  "CR": ["por los exámenes", "Hermione", "del viernes", "está preocupada"]
+                },
+                "answer": {
+                  "CR": "por los exámenes"
+                }
+              },
+              {
+                "sentence": "Voldemort discute sobre magia con Harry.",
+                "question": "¿Cuál es el complemento de régimen?",
+                "options": {
+                  "CR": ["con Harry", "Voldemort discute", "sobre magia"]
+                },
+                "answer": {
+                  "CR": "sobre magia"
+                }
+              },
+              {
+                "sentence": "Mi mejor amigo, Ron, se enamoró de su compañera de magia.",
+                "question": "¿Cuál es el complemento de régimen?",
+                "options": {
+                  "CR": ["se enamoró", "Mi mejor amigo, Ron,", "de su compañera de magia"]
+                },
+                "answer": {
+                  "CR": "de su compañera de magia"
+                }
+              },
+              {
+                "sentence": "Mi profesora insistió en que debemos estudiar mas horas.",
+                "question": "¿Cuál es el complemento de régimen?",
+                "options": {
+                  "CR": ["Mi profesora insistió", "en que debemos estudiar mas horas"]
+                },
+                "answer": {
+                  "CR": "en que debemos estudiar mas horas"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 9,
+            "description": "Llegamos al final de este nivel, pero Harry y Hermione necesitan avanzar para lograr llegar a la biblioteca y ver que pócima puede crear para derrotar al innombrable. Para eso, debemos ayudarlos a construir la oración correcta, siguiendo la estructura dada",
+            "example": "dos Amigos- juegan- Harry- en el patio- Ron- y- del castillo- en verano.",
+            "structure": "NS - NS - APOS - NV - CCLUGAR - CCTIEMPO",
+            "tasks": [
+              {
+                "type": "sentence-construction",
+                "words": [
+                  ", dos amigos,",
+                  "juegan",
+                  "Harry",
+                  "en",
+                  "el",
+                  "Ron",
+                  "patio",
+                  "y",
+                  "verano",
+                  "castillo",
+                  "del",
+                  "en"
+                ],
+                "options": {
+                  "Ns": ["Harry", "Ron"],
+                  "ns": [", dos amigos,"],
+                  "aposición": ["en el patio", "del castillo"],
+                  "nv": ["juegan"],
+                  "cclugar": ["en el patio", "del castillo"],
+                  "cctiempo": ["en verano"]
+                },
+                "answer": "Harry y Ron , dos amigos, juegan en el patio del castillo en verano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "intro": "Harry tras derrotar una vez más a Lord Voldemort, su siniestro enemigo, espera impaciente en casa de sus insoportables tíos, sin embargo, la espera dura poco, ya que entrará a la escuela de magia donde conocerá grandes amigos, entre ellos a Hermione y Ron.",
+        "sublevels": [
+          {
+            "sublevel": 1,
+            "description": "Hermione está en la biblioteca y debe buscar libros para su investigación. Para acceder a los libros correctos, debe identificar los verbos copulativos, su predicativo y si hay oraciones compuestas o simples. Para ello debe reconocer en oraciones donde estaría el verbo copulativo con el predicativo subjetivo obligatorio. ",
+            "tasks": [
+              {
+                "sentence": " ",
+                "question": "¿En que oración se encuentran?",
+                "options": {
+                    "copulative_verb": ["Harry permanece en su cuarto tranquilamente", "Tu padre le hizo algo a Snape que nunca pudo perdonar"]
+                  },
+                "answer": {
+                    "copulative_verb": "Harry permanece en su cuarto tranquilamente"
+                  }
+              },
+              {
+                "sentence": " ",
+                "question": "¿En que otra oración se encuentran?",
+                "options": {
+                    "copulative_verb": ["Los ojos de Dumbledore parecen muy brillantes y transparentes durante la noche", "Harry lanzó un hechizo para derrotar al innombrable"]
+                  },
+                "answer": {
+                    "copulative_verb": "Los ojos de Dumbledore parecen muy brillantes y transparentes durante la noche"
+                  }
+              }
+            ]
+          },
+          {
+            "sublevel": 2,
+            "description": "Elige el libro correcto para poder subir de nivel y llegar a la cámara secreta.  Reconocer entre las oraciones compuestas cual es la correcta, que nos ayudara a llegar a nuestra sale de Menesteres, ¡¡¡donde se pueden encontrar muchas cosas!!!",
+            "tasks": [
+              {
+                "sentence": "",
+                "question": "¿Cuál es la oración correcta?",
+                "options": {
+                  "OC": ["Harry lo piensa dos veces y Ron, su mejor amigo, se dirige a Hogwarts en busca de Hermione","Harry lo piensa dos veces y se dirige a Hogwarts","Mi mente me sorprende hasta mí mismo sin embargo me sugiere escucharme"]
+                },
+                "answer": {
+                  "OC": "Harry lo piensa dos veces y Ron, su mejor amigo, se dirige a Hogwarts en busca de Hermione"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 3,
+            "description": "Podés descubrir qué palabras utilizaría Hermione para armar la frase clave para descubrir donde se encuentra la sala que viene y va, ya que ésta puede aparecer y desaparecer.",
+            "structure": "MD - N - MIP - NV - PSO - CCL - NEXOADV - N - APOSICION - NV - C.REGIMEN",
+            "example": "de los retratos - pasillos - Los - encargaba - el duende - vivos y alegres - parecen -fantasmas - en los pasillos- Peeves- pero- sede poner puertas cerradas-",
+            "tasks": [
+              {
+                "type": "sentence-construction",
+                "words": [
+                  "de",
+                  "los",
+                  "pasillos",
+                  "retratos",
+                  "Los",
+                  "encargaba",
+                  ", el duende,",
+                  "vivos",
+                  "y",
+                  "parecen",
+                  "alegres",
+                  "fantasmas",
+                  "los",
+                  "en",
+                  "Peeves",
+                  "pasillos",
+                  "se",
+                  "pero",
+                  "de",
+                  "poner",
+                  "puertas",
+                  "cerradas"
+                ],
+                "options": {
+                  "md": ["Los"],
+                  "n": ["fantasmas", "Peeves"],
+                  "mip": ["de los retratos"],
+                  "nv": ["parecen", "se encargaba"],
+                  "pso": ["vivos y alegres"],
+                  "cclugar": ["en los pasillos"],
+                  "nexo_adv": ["pero"],
+                  "aposición": [", el duende,"],
+                  "c.regimen": ["de poner puertas cerradas"]
+                },
+                "answer": "Los fantasmas de los retratos parecen vivos y alegres en los pasillos pero Peeves , el duende, se encargaba de poner puertas cerradas"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "intro": "Algunos la llaman la sala de los Objetos Ocultos, ya que cuando quieren esconder algún objeto se les materializa en forma de una mini-ciudad.",
+        "sublevels": [
+          {
+            "sublevel": 1,
+            "description": "Ayudemos a Harry a encontrar el lugar perfecto para esconder su libro de pociones avanzadas que es propiedad del príncipe mestizo para que Severus Snape no lo confisque, para ello debemos encontrar esas oraciones con subordinadas adjetivas que nos ayudarán a subir de nivel.",
+            "tasks": [
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                    "osadj": ["La varita arreglada ayer está funcionando correctamente", "La varita que le arregle ayer está funcionando correctamente"]
+                  },
+                "answer": {
+                    "osadj": "La varita que le arregle ayer está funcionando correctamente"
+                  }
+              },
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                    "osadj": ["El libro que me han regalado es pura magia, dijo Harry muy contento","El libro como regalo es pura magia, dijo Harry muy contento"]
+                  },
+                "answer": {
+                    "osadj": "El libro que me han regalado es pura magia, dijo Harry muy contento"
+                  }
+              }
+            ]
+          },
+          {
+            "sublevel": 2,
+            "description": "Draco Malfoy busca reparar un armario Evanescente para infiltrar a unos Mortifagos dentro de Hogwarts, y poder matar a Albus. Salvemos a Dumbledore tratando de impedir que Draco logre su objetivo, para ello, debemos encontrar oraciones con proposiciones subordinadas sustantivas, que logren esconder el armario Evanesciente. ¿Me ayudas a lograrlo?",
+            "tasks": [
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                  "oss": ["Albus Dumbledore sabe que tengo mucha razón en eso", "Harry Potter se ha quedado huérfano y vive en casa de sus tíos"]
+                },
+                "answer": {
+                  "oss": "Albus Dumbledore sabe que tengo mucha razón en eso"
+                }
+              },
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                  "oss": ["Dumbledore me pregunto si lloverá esta noche", "A Ron le pregunté por el secreto de Hermione el fin de semana"]
+                },
+                "answer": {
+                  "oss": "Dumbledore me pregunto si lloverá esta noche"
+                }
+              }
+            ]
+          },
+          {
+            "sublevel": 3,
+            "description": "E.D. el ejército de Dumbledore, busca un lugar amplio con estanterías de libros que hablen sobre la defensa de las artes oscuras, con sillones, con detectores de tenebrismo y puf para practicar hechizos aturdidores. Vamos juntos a ayudar a este ejercito a preparar este lugar para sus hechizos. ¡¡Para ello debemos identificar las oraciones que contengan subordinadas adverbiales, ojo!! Recuerda que cumplen la función de un adverbio o circunstancial.",
+            "tasks": [
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                  "osadv": ["El ejercito E.D. llegará donde siempre lo esperan los magos de la escuela","Harry se siente muy triste y solo por que no puede conocer los secretos de sus padres"]
+                },
+                "answer": {
+                  "osadv": "El ejercito E.D. llegará donde siempre lo esperan los magos de la escuela"
+                }
+              },
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                  "osadv": ["Los magos se reunieron en la sala común para planificar la próxima misión","Los profesores de la escuela de magia traen un regalo siempre que vienen"]
+                },
+                "answer": {
+                  "osadv": "Los profesores de la escuela de magia traen un regalo siempre que vienen"
+                }
+              },
+              {
+                "sentence": " ",
+                "question": "¿Cuáles son las oraciones correctas?",
+                "options": {
+                  "osadv": ["Harry encontró un libro muy interesante sobre la defensa contra las artes oscuras","Como no hubo acuerdo, E.D. deshizo el trato con los magos"]
+                },
+                "answer": {
+                  "osadv": "Como no hubo acuerdo, E.D. deshizo el trato con los magos"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
