@@ -79,7 +79,7 @@ const Game = () => {
 
   const saveScore = async (newScore) => {
     try {
-      await axios.post('http://localhost:3001/save-score', {
+      await axios.post('monorail.proxy.rlwy.net:13277/save-score', {
         playerName,
         score: newScore,
         team
@@ -189,7 +189,7 @@ const Game = () => {
   };
   const sendGameCompletedInfo = async (completed) => {
     try {
-      const response = await axios.post('http://localhost:3001/complete-game', {
+      const response = await axios.post('monorail.proxy.rlwy.net:13277/complete-game', {
         playerName,
         score,
         team,
