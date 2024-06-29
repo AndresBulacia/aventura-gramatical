@@ -17,6 +17,8 @@ import LevelCompletedModal from "../modals/LevelCompletedModal";
 import videoFondo_Level2 from '../../assets/videos/fondo_nivel2.mp4';
 import videoFondo_Level3 from '../../assets/videos/fondo_nivel3.mp4';
 
+const API_URL = 'https://monorail.proxy.rlwy.net:13277';
+
 const Game = () => {
   const [isSoundEnabled, setIsSoundEnabled] = useState(true);
   const [currentLevel, setCurrentLevel] = useState(0);
@@ -43,6 +45,11 @@ const Game = () => {
   const buttonCorrectAnswer = new Audio(correctanswer_sound);
   const buttonWrongAnswer = new Audio(wronganswer_sound);
   const buttonLevelCompleted = new Audio(levelcompleted_sound);
+
+   // Configura Axios con la URL base
+   const axiosInstance = axios.create({
+    baseURL: API_URL,
+  });
 
         //Funcion sonido boton
         const playSound = (audio) => {
@@ -81,7 +88,7 @@ const Game = () => {
 
   const saveScore = async (newScore) => {
     try {
-      await axios.post('monorail.proxy.rlwy.net:13277/save-score', {
+      await axiosInstance.post('/save-score', {
         playerName,
         score: newScore,
         team
@@ -191,7 +198,7 @@ const Game = () => {
   };
   const sendGameCompletedInfo = async (completed) => {
     try {
-      const response = await axios.post('monorail.proxy.rlwy.net:13277/complete-game', {
+      const response = await axiosInstance.post('/complete-game', {
         playerName,
         score,
         team,
