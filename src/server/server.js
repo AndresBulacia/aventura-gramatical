@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const app = express();
 require('dotenv').config();
 
-
+const PORT = process.env.PORT || 3000;
 // Conexión a MySQL
 const db = mysql.createConnection({
     host: process.env.DB_HOST,

@@ -14,6 +14,8 @@ import levelcompleted_sound from "../../assets/sounds/level_completed.mp3";
 import wronganswer_sound from "../../assets/sounds/wrong_answer.mp3";
 import correctanswer_sound from "../../assets/sounds/correct_answer.mp3";
 import LevelCompletedModal from "../modals/LevelCompletedModal";
+import videoFondo_Level2 from '../../assets/videos/fondo_nivel2.mp4';
+import videoFondo_Level3 from '../../assets/videos/fondo_nivel3.mp4';
 
 const Game = () => {
   const [isSoundEnabled, setIsSoundEnabled] = useState(true);
@@ -283,6 +285,16 @@ const Game = () => {
     );
   };
 
+  const getBackgroundVideo = () => {
+    if (currentLevel === 1) {
+      return videoFondo_Level2;
+    } else if (currentLevel === 2) {
+      return videoFondo_Level3;
+    } else {
+      return videoFondo;
+    }
+  };
+
   if (step === 0) {
     return (
       <div className="container active">
@@ -305,7 +317,7 @@ const Game = () => {
             <button className="start-button" onClick={handleNameSubmit}>Comenzar la aventura</button>
           </div>
         )}
-        <video autoPlay muted loop id="background-video"><source src={videoFondo} type="video/mp4"/></video>        
+        <video autoPlay muted loop id="background-video"><source src={getBackgroundVideo()} type="video/mp4"/></video>        
         <div className="video-overlay"></div>
       </div>
     );
@@ -320,7 +332,7 @@ const Game = () => {
           <button onClick={() => setTeam('2do')}>Segundo Año</button>
           <button onClick={() => setTeam('3ro')}>Tercer Año</button>
         </div>
-        <video autoPlay muted loop id="background-video"><source src={videoFondo} type="video/mp4"/></video>        
+        <video autoPlay muted loop id="background-video"><source src={getBackgroundVideo()} type="video/mp4"/></video>        
         <div className="video-overlay"></div>
       </div>
     );
@@ -338,6 +350,7 @@ const Game = () => {
   if (!task) {
     return <div>Loading...</div>;
   }
+  
 
   return (
     <div className="container active">
@@ -386,7 +399,7 @@ const Game = () => {
                 />
             </div>
         )}
-        <video autoPlay muted loop id="background-video"><source src={videoFondo} type="video/mp4"/></video>        
+        <video autoPlay muted loop id="background-video"><source src={getBackgroundVideo()} type="video/mp4"/></video>        
         <div className="video-overlay"></div>
     </div>
 );
