@@ -10,7 +10,7 @@ const RankingModal = ({isOpen, onRequestClose}) => {
 
     useEffect(() => {
         if (isOpen) {
-            axios.get('monorail.proxy.rlwy.net:13277/get-scores')
+            axios.get('https://monorail.proxy.rlwy.net:13277/get-scores')
             .then(response => {
                 setScores(response.data);
             })

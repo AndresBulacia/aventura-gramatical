@@ -1,19 +1,21 @@
 const express = require('express');
 const mysql = require('mysql2');
 const app = express();
+const cors = require('cors');
 require('dotenv').config();
 
+app.use(cors());
 app.use(express.json()); // Asegúrate de que esta línea esté aquí para parsear el cuerpo de las solicitudes
 
-const PORT = process.env.PORT || 3006;
+const PORT = process.env.PORT || 3306;
 
-// Conexión a MySQL
+// Conexión a MySQL sin SSL
 const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    port: process.env.DB_PORT
+    port: process.env.DB_PORT,
 });
 
 db.connect((err) => {
