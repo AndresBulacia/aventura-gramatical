@@ -10,7 +10,7 @@ const RankingModal = ({isOpen, onRequestClose}) => {
 
     useEffect(() => {
         if (isOpen) {
-            axios.get('https://monorail.proxy.rlwy.net:13277/get-scores')
+            axios.get('https://aventura-gramatical.up.railway.app/get-scores')
             .then(response => {
                 setScores(response.data);
             })
