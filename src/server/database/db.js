@@ -1,8 +1,8 @@
-import { createPool } from "mysql2/promise";
+require ('dotenv').config();
+const mysql = require('mysql2');
 
-export const pool = await createPool({
-    user: 'root',
-    password: 'Sanmartin3423!',
-    host: 'localhost',
-    database: 'aventura_gramatical'
-})
+const urlDB = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLDATABASE}`
+
+const connection = mysql.createConnection(urlDB);
+
+module.exports = connection;
