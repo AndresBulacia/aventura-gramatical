@@ -81,7 +81,7 @@ const Game = () => {
 
   const saveScore = async (newScore) => {
     try {
-      await axios.post('monorail.proxy.rlwy.net:13277/save-score', {
+      await axios.post('https://aventura-gramatical.up.railway.app/save-score', {
         playerName,
         score: newScore,
         team
