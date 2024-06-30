@@ -179,27 +179,12 @@ const Game = () => {
         } else {
             playSound(buttonLevelCompleted);
             setModalMessage(`Has completado todos los niveles permitidos para tu equipo! Tus puntos totales son: ${score}`);
-            sendGameCompletedInfo(true);
-            localStorage.setItem("GameCompleted", "true")
             setShowModal(true);
         }
     } else {
         playSound(buttonLevelCompleted);
         setModalMessage(`¡Has completado todos los niveles! Tus puntos totales son: ${score}`);
         setShowModal(true);
-    }
-  };
-  const sendGameCompletedInfo = async (completed) => {
-    try {
-      const response = await axios.post('monorail.proxy.rlwy.net:13277/complete-game', {
-        playerName,
-        score,
-        team,
-        completed
-      });
-      console.log('Game completion info sent successfully:', response.data);
-    } catch (error) {
-      console.error('Error sending game completion info:', error);
     }
   };
 
