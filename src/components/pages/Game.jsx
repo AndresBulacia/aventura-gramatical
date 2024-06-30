@@ -16,7 +16,6 @@ import correctanswer_sound from "../../assets/sounds/correct_answer.mp3";
 import LevelCompletedModal from "../modals/LevelCompletedModal";
 import videoFondo_Level2 from '../../assets/videos/fondo_nivel2.mp4';
 import videoFondo_Level3 from '../../assets/videos/fondo_nivel3.mp4';
-import axios from '../../server/axios.js';
 
 const Game = () => {
   const [isSoundEnabled, setIsSoundEnabled] = useState(true);
@@ -82,7 +81,7 @@ const Game = () => {
 
   const saveScore = async (newScore) => {
     try {
-      await axios.post('/save-score', {
+      await axios.post('monorail.proxy.rlwy.net:13277/save-score', {
         playerName,
         score: newScore,
         team
@@ -192,7 +191,7 @@ const Game = () => {
   };
   const sendGameCompletedInfo = async (completed) => {
     try {
-      const response = await axios.post('/complete-game', {
+      const response = await axios.post('monorail.proxy.rlwy.net:13277/complete-game', {
         playerName,
         score,
         team,
