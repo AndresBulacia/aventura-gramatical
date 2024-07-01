@@ -24,7 +24,7 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     color: var(--color-white);
     font-size: 16px;
 }
@@ -61,6 +61,7 @@ body, html {
     height: 100vh;
     text-align: center;
     padding: 20px;
+    overflow: auto;
 }
 
 .typewriter-text {
