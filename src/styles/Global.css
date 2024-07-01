@@ -23,9 +23,14 @@
 }
 
 /* Global styles */
-body {
+body, html {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: var(--color-white);
+    font-size: 16px;
 }
 
 
@@ -40,12 +45,14 @@ body {
     z-index: -1;
 }
 
-/*SOMBRA DE VIDEO*/
+/* Sombra de video */
 .video-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
 }

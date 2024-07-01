@@ -211,7 +211,7 @@ const Game = () => {
     const levelTitles = ["Bosque Prohibido", "Biblioteca", "Sala Menesteres"];
     const levelVideo = [bosqueProhibidoEscena, bibliotecaEscena, salaMenesteresEscena];
     return (
-      <div className="container active">
+      <div className="container active" translate="no">
         <audio src={sfxSoundZoom} autoPlay/>
         <h1 className="zoom-in-title" onAnimationEnd={() => setShowVideo(true)}>{levelTitles[currentLevel]}</h1>
         {showVideo && (
@@ -231,15 +231,15 @@ const Game = () => {
   const renderLevelDescription = () => {
     const levelIntro = data.levels[currentLevel].intro;
     return (
-      <div className="container active">
-        <div className="typewriter-text">
+      <div className="container active" translate="no">
+        <div className="typewriter-text" translate="no">
           <TypeWriter
             text={levelIntro}
             onComplete={() => setShowStartButton(true)}
           />
         </div>
         {ShowStartButton && (
-          <div className="fade-in-content">
+          <div className="fade-in-content" translate="no">
             <button className="start-button" onClick={startSubLevelIntro}>Comenzar</button>
           </div>
         )}
@@ -253,7 +253,7 @@ const Game = () => {
   const renderSubLevelDescription = () => {
     const SublevelIntro = data.levels[currentLevel].sublevels[currentSublevel].description;
     return (
-      <div className="container active">
+      <div className="container active" translate="no">
         <div className="typewriter-text">
           <p>{SublevelIntro}</p>
         </div>
@@ -282,7 +282,7 @@ const Game = () => {
 
   if (step === 0) {
     return (
-      <div className="container active">
+      <div className="container active" translate="no">
         <div className="typewriter-text">
           <TypeWriter
             text="¡¡Bienvenidos al mundo gramático de Harry Potter!! Un mundo mágico lleno de aventuras 
@@ -310,7 +310,7 @@ const Game = () => {
 
   if (step === 2 && !team) {
     return (
-      <div className="container active">
+      <div className="container active" translate="no">
         <div className="team-select-buttons fade-in-video">
           <h2 className="team-select-buttons-h2">SELECCIONA TU CURSO:</h2>
           <button onClick={() => setTeam('1ero')}>Primer Año</button>
@@ -338,7 +338,7 @@ const Game = () => {
   
 
   return (
-    <div className="container active">
+    <div className="container active" translate="no">
         {ShowLevelDescription ? (
             renderLevelDescription()
         ) : (

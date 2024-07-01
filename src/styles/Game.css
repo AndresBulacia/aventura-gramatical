@@ -19,13 +19,14 @@
 }
 
 /*GLOBALES*/
-body,html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
     color: var(--color-white);
+    font-size: 16px;
 }
 
 /*VIDEO DE FONDO*/
@@ -386,9 +387,6 @@ body,html {
     .team-select-buttons button, .welcome-player, .sentence, .options button, .task-info, 
     .button-game, .score-player, .start-button-escenas {
         font-size: 5vw;
-    }
-    .welcome-player{
-        
     }
 
     .player-name-input {
