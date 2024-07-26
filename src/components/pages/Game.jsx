@@ -150,6 +150,10 @@ const Game = () => {
     setSelectedWords([]);
   }
 
+  const handleBackMenu = () => {
+    navigate('/');
+  }
+
   const nextTask = () => {
     const sublevels = data.levels[currentLevel].sublevels;
     const tasks = sublevels[currentSublevel].tasks;
@@ -344,6 +348,7 @@ const Game = () => {
         ) : (
             <div>
                 <h1 className="welcome-player">Hola, {localStorage.getItem('playerName')}!</h1>
+                <button className="back-menu button-game" onClick={handleBackMenu}>Volver al Menú</button>
                 <div className="task-info">
                     <h2>Nivel {currentLevel + 1}, Subnivel {currentSublevel + 1}</h2>
                     <p>{data.levels[currentLevel].sublevels[currentSublevel].structure}</p>
